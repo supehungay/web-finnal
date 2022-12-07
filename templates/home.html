@@ -1,0 +1,696 @@
+{% extends 'base.html'%}
+{%block content%}
+<body>
+    <!-- Carousel -->
+    <div class="container-fluid p-0">
+        <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="w-100" src="img/carousel-3.jpg" alt="Image">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <div class="p-3" style="max-width: 900px;">
+                            <h4 class="text-white text-uppercase mb-md-3">Tours & Travel</h4>
+                            <h1 class="display-3 text-white mb-md-4">Let's Discover The World Together</h1>
+                            <a href="" class="btn btn-primary py-md-3 px-md-5 mt-2">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="w-100" src="img/carousel-4.jpg" alt="Image">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <div class="p-3" style="max-width: 900px;">
+                            <h4 class="text-white text-uppercase mb-md-3">Tours & Travel</h4>
+                            <h1 class="display-3 text-white mb-md-4">Discover Amazing Places With Us</h1>
+                            <a href="" class="btn btn-primary py-md-3 px-md-5 mt-2">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="w-100" src="img/carousel-5.jpeg" alt="Image">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <div class="p-3" style="max-width: 900px;">
+                            <h4 class="text-white text-uppercase mb-md-3">Tours & Travel</h4>
+                            <h1 class="display-3 text-white mb-md-4">Discover Amazing Places With Us</h1>
+                            <a href="" class="btn btn-primary py-md-3 px-md-5 mt-2">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#myCarousel" data-bs-slide="prev">
+                <div class="btn btn-dark" style="width: 45px; height: 45px;">
+                    <span class="carousel-control-prev-icon mb-n2"></span>
+                </div>
+            </a>
+            <a class="carousel-control-next" href="#myCarousel" data-bs-slide="next">
+                <div class="btn btn-dark" style="width: 45px; height: 45px;">
+                    <span class="carousel-control-next-icon mb-n2"></span>
+                </div>
+            </a>
+        </div>
+    </div>
+    <!-- End Carousel -->
+
+    <!-- Booking Start -->
+    <form action="">
+        <div class="container-fluid">
+            <div class="bg-white shadow m-5 p-4">
+                <div class="row g-2 align-items-center">
+                    <div class="col-md-10">
+                        <div class="row g-2 align-items-center">
+                            <!-- Set Local -->
+                            <div class="col-md-3">
+                                <div class="form-floating">
+                                    <select class="form-select" id="floatingsSelectGrid"
+                                        aria-label="Floating label select example">
+                                        <option selected>Open this select</option>
+                                        <option value="1">Ha Noi</option>
+                                        <option value="2">HCM</option>
+                                        <option value="3">Da Nang</option>
+                                    </select>
+                                    <label for="floatingsSelectGrid">Select local</label>
+                                </div>
+                            </div>
+                            <!-- End Set Local -->
+
+                            <!-- Set Check In -->
+                            <div class="col-md-3">
+                                <div class="form-floating">
+                                    <input type="date" class="form-control" id="checkint" placeholder="Check Int" />
+                                    <label for="checkint">Check Int</label>
+                                </div>
+                            </div>
+                            <!-- End Set Check In -->
+
+                            <!-- Set Check Out -->
+                            <div class="col-md-3">
+                                <div class="form-floating">
+                                    <input type="date" class="form-control" id="checkout" placeholder="Check Out" />
+                                    <label for="checkout">Check Out</label>
+                                </div>
+                            </div>
+                            <!-- End Set Check Out -->
+
+                            <!-- Customer Type -->
+                            <div class="col-md-3">
+                                <div class="form-floating">
+                                    <select class="form-select" id="floatingsSelectGrid1"
+                                        aria-label="Floating label select example">
+                                        <option selected>Open this select</option>
+                                        <option value="1">16+</option>
+                                        <option value="2">18+</option>
+                                        <option value="3">89+</option>
+                                    </select>
+                                    <label for="floatingsSelectGrid1">Select local</label>
+                                </div>
+                            </div>
+                            <!-- End Customer Type -->
+                        </div>
+                    </div>
+
+                    <!-- Submit booking-->
+                    <div class="col-md-2">
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal"
+                            data-bs-target="#staticBackdrop">
+                            Submit
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+                            tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="staticBackdropLabel">Search</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        AHIHI
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Close</button>
+                                        <button type="submit" class="btn btn-primary">Booking</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Submit booking -->
+                </div>
+            </div>
+        </div>
+
+    </form>
+    <!-- Booking End -->
+
+    <!-- Room Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-title text-center text-primary text-uppercase">Our Rooms</h2>
+                <h1 class="mb-5">Explore Our <span class="text-primary text-uppercase">Rooms</span></h1>
+            </div>
+
+            <!-- Select -->
+            <div class="d-flex justify-content-end">
+                <div class="form-floating mb-2 width-select">
+                    <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                        <option selected>most popular</option>
+                        <option value="1">prices go up</option>
+                        <option value="2">prices go down</option>
+                        <option value="3">Rating</option>
+                    </select>
+                    <label for="floatingSelect">sorted by</label>
+                </div>
+            </div>
+            <!-- Select end -->
+
+            <!-- Product -->
+            <div class="row gy-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="shadow rounded overflow-hidden">
+                        <div class="position-relative">
+                            <img class="img-fluid" src="img_uoa/13.jpg" alt="">
+                            <small
+                                class="position-absolute start-0 top-100 translate-middle-y bg-primary text-white rounded py-1 px-3 ms-4">$100/Night</small>
+                        </div>
+                        <div class="p-4 mt-2">
+                            <div class="d-flex justify-content-between mb-3">
+                                <h5 class="mb-0">Junior Suite</h5>
+                                <div class="ps-2">
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                </div>
+                            </div>
+                            <div class="d-flex mb-3">
+                                <small class="border-end me-3 pe-3"><i class="fa fa-bed text-primary me-2"></i>3
+                                    Bed</small>
+                                <small class="border-end me-3 pe-3"><i class="fa fa-bath text-primary me-2"></i>2
+                                    Bath</small>
+                                <small><i class="fa fa-wifi text-primary me-2"></i>Wifi</small>
+                            </div>
+                            <p class="text-body mb-3">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem
+                                sed diam stet diam sed stet lorem.</p>
+                            <div class="d-flex justify-content-between">
+                                <a class="btn btn-sm btn-primary rounded py-2 px-4" href="detail.html">View Detail</a>
+                                <a class="btn btn-sm btn-dark rounded py-2 px-4" href="booking.html">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="shadow rounded overflow-hidden">
+                        <div class="position-relative">
+                            <img class="img-fluid" src="img_uoa/2.jpg" alt="">
+                            <small
+                                class="position-absolute start-0 top-100 translate-middle-y bg-primary text-white rounded py-1 px-3 ms-4">$100/Night</small>
+                        </div>
+                        <div class="p-4 mt-2">
+                            <div class="d-flex justify-content-between mb-3">
+                                <h5 class="mb-0">Executive Suite</h5>
+                                <div class="ps-2">
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                </div>
+                            </div>
+                            <div class="d-flex mb-3">
+                                <small class="border-end me-3 pe-3"><i class="fa fa-bed text-primary me-2"></i>3
+                                    Bed</small>
+                                <small class="border-end me-3 pe-3"><i class="fa fa-bath text-primary me-2"></i>2
+                                    Bath</small>
+                                <small><i class="fa fa-wifi text-primary me-2"></i>Wifi</small>
+                            </div>
+                            <p class="text-body mb-3">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem
+                                sed diam stet diam sed stet lorem.</p>
+                            <div class="d-flex justify-content-between">
+                                <a class="btn btn-sm btn-primary rounded py-2 px-4" href="detail.html">View Detail</a>
+                                <a class="btn btn-sm btn-dark rounded py-2 px-4" href="booking.html">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="shadow rounded overflow-hidden">
+                        <div class="position-relative">
+                            <img class="img-fluid" src="img_uoa/3.jpg" alt="">
+                            <small
+                                class="position-absolute start-0 top-100 translate-middle-y bg-primary text-white rounded py-1 px-3 ms-4">$100/Night</small>
+                        </div>
+                        <div class="p-4 mt-2">
+                            <div class="d-flex justify-content-between mb-3">
+                                <h5 class="mb-0">Super Deluxe</h5>
+                                <div class="ps-2">
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                </div>
+                            </div>
+                            <div class="d-flex mb-3">
+                                <small class="border-end me-3 pe-3"><i class="fa fa-bed text-primary me-2"></i>3
+                                    Bed</small>
+                                <small class="border-end me-3 pe-3"><i class="fa fa-bath text-primary me-2"></i>2
+                                    Bath</small>
+                                <small><i class="fa fa-wifi text-primary me-2"></i>Wifi</small>
+                            </div>
+                            <p class="text-body mb-3">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem
+                                sed diam stet diam sed stet lorem.</p>
+                            <div class="d-flex justify-content-between">
+                                <a class="btn btn-sm btn-primary rounded py-2 px-4" href="detail.html">View Detail</a>
+                                <a class="btn btn-sm btn-dark rounded py-2 px-4" href="booking.html">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="shadow rounded overflow-hidden">
+                        <div class="position-relative">
+                            <img class="img-fluid" src="img_uoa/4.jpg" alt="">
+                            <small
+                                class="position-absolute start-0 top-100 translate-middle-y bg-primary text-white rounded py-1 px-3 ms-4">$100/Night</small>
+                        </div>
+                        <div class="p-4 mt-2">
+                            <div class="d-flex justify-content-between mb-3">
+                                <h5 class="mb-0">Junior Suite</h5>
+                                <div class="ps-2">
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                </div>
+                            </div>
+                            <div class="d-flex mb-3">
+                                <small class="border-end me-3 pe-3"><i class="fa fa-bed text-primary me-2"></i>3
+                                    Bed</small>
+                                <small class="border-end me-3 pe-3"><i class="fa fa-bath text-primary me-2"></i>2
+                                    Bath</small>
+                                <small><i class="fa fa-wifi text-primary me-2"></i>Wifi</small>
+                            </div>
+                            <p class="text-body mb-3">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem
+                                sed diam stet diam sed stet lorem.</p>
+                            <div class="d-flex justify-content-between">
+                                <a class="btn btn-sm btn-primary rounded py-2 px-4" href="detail.html">View Detail</a>
+                                <a class="btn btn-sm btn-dark rounded py-2 px-4" href="booking.html">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="shadow rounded overflow-hidden">
+                        <div class="position-relative">
+                            <img class="img-fluid" src="img_uoa/5.jpg" alt="">
+                            <small
+                                class="position-absolute start-0 top-100 translate-middle-y bg-primary text-white rounded py-1 px-3 ms-4">$100/Night</small>
+                        </div>
+                        <div class="p-4 mt-2">
+                            <div class="d-flex justify-content-between mb-3">
+                                <h5 class="mb-0">Junior Suite</h5>
+                                <div class="ps-2">
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                </div>
+                            </div>
+                            <div class="d-flex mb-3">
+                                <small class="border-end me-3 pe-3"><i class="fa fa-bed text-primary me-2"></i>3
+                                    Bed</small>
+                                <small class="border-end me-3 pe-3"><i class="fa fa-bath text-primary me-2"></i>2
+                                    Bath</small>
+                                <small><i class="fa fa-wifi text-primary me-2"></i>Wifi</small>
+                            </div>
+                            <p class="text-body mb-3">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem
+                                sed diam stet diam sed stet lorem.</p>
+                            <div class="d-flex justify-content-between">
+                                <a class="btn btn-sm btn-primary rounded py-2 px-4" href="detail.html">View Detail</a>
+                                <a class="btn btn-sm btn-dark rounded py-2 px-4" href="booking.html">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="shadow rounded overflow-hidden">
+                        <div class="position-relative">
+                            <img class="img-fluid" src="img_uoa/6.jpg" alt="">
+                            <small
+                                class="position-absolute start-0 top-100 translate-middle-y bg-primary text-white rounded py-1 px-3 ms-4">$100/Night</small>
+                        </div>
+                        <div class="p-4 mt-2">
+                            <div class="d-flex justify-content-between mb-3">
+                                <h5 class="mb-0">Junior Suite</h5>
+                                <div class="ps-2">
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                </div>
+                            </div>
+                            <div class="d-flex mb-3">
+                                <small class="border-end me-3 pe-3"><i class="fa fa-bed text-primary me-2"></i>3
+                                    Bed</small>
+                                <small class="border-end me-3 pe-3"><i class="fa fa-bath text-primary me-2"></i>2
+                                    Bath</small>
+                                <small><i class="fa fa-wifi text-primary me-2"></i>Wifi</small>
+                            </div>
+                            <p class="text-body mb-3">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem
+                                sed diam stet diam sed stet lorem.</p>
+                            <div class="d-flex justify-content-between">
+                                <a class="btn btn-sm btn-primary rounded py-2 px-4" href="detail.html">View Detail</a>
+                                <a class="btn btn-sm btn-dark rounded py-2 px-4" href="booking.html">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="shadow rounded overflow-hidden">
+                        <div class="position-relative">
+                            <img class="img-fluid" src="img_uoa/7.jpg" alt="">
+                            <small
+                                class="position-absolute start-0 top-100 translate-middle-y bg-primary text-white rounded py-1 px-3 ms-4">$100/Night</small>
+                        </div>
+                        <div class="p-4 mt-2">
+                            <div class="d-flex justify-content-between mb-3">
+                                <h5 class="mb-0">Junior Suite</h5>
+                                <div class="ps-2">
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                </div>
+                            </div>
+                            <div class="d-flex mb-3">
+                                <small class="border-end me-3 pe-3"><i class="fa fa-bed text-primary me-2"></i>3
+                                    Bed</small>
+                                <small class="border-end me-3 pe-3"><i class="fa fa-bath text-primary me-2"></i>2
+                                    Bath</small>
+                                <small><i class="fa fa-wifi text-primary me-2"></i>Wifi</small>
+                            </div>
+                            <p class="text-body mb-3">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem
+                                sed diam stet diam sed stet lorem.</p>
+                            <div class="d-flex justify-content-between">
+                                <a class="btn btn-sm btn-primary rounded py-2 px-4" href="detail.html">View Detail</a>
+                                <a class="btn btn-sm btn-dark rounded py-2 px-4" href="booking.html">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="shadow rounded overflow-hidden">
+                        <div class="position-relative">
+                            <img class="img-fluid" src="img_uoa/8.jpg" alt="">
+                            <small
+                                class="position-absolute start-0 top-100 translate-middle-y bg-primary text-white rounded py-1 px-3 ms-4">$100/Night</small>
+                        </div>
+                        <div class="p-4 mt-2">
+                            <div class="d-flex justify-content-between mb-3">
+                                <h5 class="mb-0">Junior Suite</h5>
+                                <div class="ps-2">
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                </div>
+                            </div>
+                            <div class="d-flex mb-3">
+                                <small class="border-end me-3 pe-3"><i class="fa fa-bed text-primary me-2"></i>3
+                                    Bed</small>
+                                <small class="border-end me-3 pe-3"><i class="fa fa-bath text-primary me-2"></i>2
+                                    Bath</small>
+                                <small><i class="fa fa-wifi text-primary me-2"></i>Wifi</small>
+                            </div>
+                            <p class="text-body mb-3">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem
+                                sed diam stet diam sed stet lorem.</p>
+                            <div class="d-flex justify-content-between">
+                                <a class="btn btn-sm btn-primary rounded py-2 px-4" href="detail.html">View Detail</a>
+                                <a class="btn btn-sm btn-dark rounded py-2 px-4" href="booking.html">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="shadow rounded overflow-hidden">
+                        <div class="position-relative">
+                            <img class="img-fluid" src="img_uoa/9.jpg" alt="">
+                            <small
+                                class="position-absolute start-0 top-100 translate-middle-y bg-primary text-white rounded py-1 px-3 ms-4">$100/Night</small>
+                        </div>
+                        <div class="p-4 mt-2">
+                            <div class="d-flex justify-content-between mb-3">
+                                <h5 class="mb-0">Junior Suite</h5>
+                                <div class="ps-2">
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                </div>
+                            </div>
+                            <div class="d-flex mb-3">
+                                <small class="border-end me-3 pe-3"><i class="fa fa-bed text-primary me-2"></i>3
+                                    Bed</small>
+                                <small class="border-end me-3 pe-3"><i class="fa fa-bath text-primary me-2"></i>2
+                                    Bath</small>
+                                <small><i class="fa fa-wifi text-primary me-2"></i>Wifi</small>
+                            </div>
+                            <p class="text-body mb-3">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem
+                                sed diam stet diam sed stet lorem.</p>
+                            <div class="d-flex justify-content-between">
+                                <a class="btn btn-sm btn-primary rounded py-2 px-4" href="detail.html">View Detail</a>
+                                <a class="btn btn-sm btn-dark rounded py-2 px-4" href="booking.html">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="shadow rounded overflow-hidden">
+                        <div class="position-relative">
+                            <img class="img-fluid" src="img_uoa/10.jpg" alt="">
+                            <small
+                                class="position-absolute start-0 top-100 translate-middle-y bg-primary text-white rounded py-1 px-3 ms-4">$100/Night</small>
+                        </div>
+                        <div class="p-4 mt-2">
+                            <div class="d-flex justify-content-between mb-3">
+                                <h5 class="mb-0">Junior Suite</h5>
+                                <div class="ps-2">
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                </div>
+                            </div>
+                            <div class="d-flex mb-3">
+                                <small class="border-end me-3 pe-3"><i class="fa fa-bed text-primary me-2"></i>3
+                                    Bed</small>
+                                <small class="border-end me-3 pe-3"><i class="fa fa-bath text-primary me-2"></i>2
+                                    Bath</small>
+                                <small><i class="fa fa-wifi text-primary me-2"></i>Wifi</small>
+                            </div>
+                            <p class="text-body mb-3">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem
+                                sed diam stet diam sed stet lorem.</p>
+                            <div class="d-flex justify-content-between">
+                                <a class="btn btn-sm btn-primary rounded py-2 px-4" href="detail.html">View Detail</a>
+                                <a class="btn btn-sm btn-dark rounded py-2 px-4" href="booking.html">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="shadow rounded overflow-hidden">
+                        <div class="position-relative">
+                            <img class="img-fluid" src="img_uoa/14.jpg" alt="">
+                            <small
+                                class="position-absolute start-0 top-100 translate-middle-y bg-primary text-white rounded py-1 px-3 ms-4">$100/Night</small>
+                        </div>
+                        <div class="p-4 mt-2">
+                            <div class="d-flex justify-content-between mb-3">
+                                <h5 class="mb-0">Junior Suite</h5>
+                                <div class="ps-2">
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                </div>
+                            </div>
+                            <div class="d-flex mb-3">
+                                <small class="border-end me-3 pe-3"><i class="fa fa-bed text-primary me-2"></i>3
+                                    Bed</small>
+                                <small class="border-end me-3 pe-3"><i class="fa fa-bath text-primary me-2"></i>2
+                                    Bath</small>
+                                <small><i class="fa fa-wifi text-primary me-2"></i>Wifi</small>
+                            </div>
+                            <p class="text-body mb-3">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem
+                                sed diam stet diam sed stet lorem.</p>
+                            <div class="d-flex justify-content-between">
+                                <a class="btn btn-sm btn-primary rounded py-2 px-4" href="detail.html">View Detail</a>
+                                <a class="btn btn-sm btn-dark rounded py-2 px-4" href="booking.html">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="shadow rounded overflow-hidden">
+                        <div class="position-relative">
+                            <img class="img-fluid" src="img_uoa/12.jpg" alt="">
+                            <small
+                                class="position-absolute start-0 top-100 translate-middle-y bg-primary text-white rounded py-1 px-3 ms-4">$100/Night</small>
+                        </div>
+                        <div class="p-4 mt-2">
+                            <div class="d-flex justify-content-between mb-3">
+                                <h5 class="mb-0">Junior Suite</h5>
+                                <div class="ps-2">
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                </div>
+                            </div>
+                            <div class="d-flex mb-3">
+                                <small class="border-end me-3 pe-3"><i class="fa fa-bed text-primary me-2"></i>3
+                                    Bed</small>
+                                <small class="border-end me-3 pe-3"><i class="fa fa-bath text-primary me-2"></i>2
+                                    Bath</small>
+                                <small><i class="fa fa-wifi text-primary me-2"></i>Wifi</small>
+                            </div>
+                            <p class="text-body mb-3">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem
+                                sed diam stet diam sed stet lorem.</p>
+                            <div class="d-flex justify-content-between">
+                                <a class="btn btn-sm btn-primary rounded py-2 px-4" href="detail.html">View Detail</a>
+                                <a class="btn btn-sm btn-dark rounded py-2 px-4" href="booking.html">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Room End -->
+
+    <!-- Newsletter Start -->
+    <form action="">
+        <div class="container mb-3">
+            <div class="row justify-content-center">
+                <div class="col-lg-10 border rounded p-1">
+                    <div class="border rounded text-center p-1">
+                        <div class="bg-white rounded text-center p-5">
+                            <h4 class="mb-4">Subscribe Our <span class="text-primary text-uppercase">Newsletter</span>
+                            </h4>
+                            <div class="position-relative mx-auto" style="max-width: 400px;">
+                                <input class="form-control w-100 py-3 ps-4 pe-5" type="text"
+                                    placeholder="Enter your email">
+                                <button type="submit"
+                                    class="btn btn-primary py-2 px-3 position-absolute top-0 end-0 mt-2 me-2">Submit</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+    <!-- Newsletter Start -->
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-light footer">
+        <div class="container pb-5">
+            <div class="row g-5">
+                <div class="col-md-6 col-lg-4">
+                    <div class="bg-primary rounded p-4">
+                        <a href="index.html">
+                            <h1 class="text-white text-uppercase mb-3">Hotelier</h1>
+                        </a>
+                        <p class="text-white mb-0">
+                            Download <a class="text-dark fw-medium" href="#">Hotelier – Premium Version</a>,
+                            build a professional website for your hotel business and grab the attention of new visitors
+                            upon your site’s launch.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <h6 class="section-title text-start text-primary text-uppercase mb-4">Contact</h6>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>334 Nguyen Trai, Thanh Xuan, HN</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+98 365 046 708</p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>hugdosiucute@u_oa.com</p>
+                    <div class="d-flex pt-2">
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-5 col-md-12">
+                    <div class="row gy-5 g-4">
+                        <div class="col-md-6">
+                            <h6 class="section-title text-start text-primary text-uppercase mb-4">Company</h6>
+                            <a class="btn btn-link" href="">About Us</a>
+                            <a class="btn btn-link" href="">Contact Us</a>
+                            <a class="btn btn-link" href="">Privacy Policy</a>
+                            <a class="btn btn-link" href="">Terms & Condition</a>
+                            <a class="btn btn-link" href="">Support</a>
+                        </div>
+                        <div class="col-md-6">
+                            <h6 class="section-title text-start text-primary text-uppercase mb-4">Services</h6>
+                            <a class="btn btn-link" href="">Food & Restaurant</a>
+                            <a class="btn btn-link" href="">Spa & Fitness</a>
+                            <a class="btn btn-link" href="">Sports & Gaming</a>
+                            <a class="btn btn-link" href="">Event & Party</a>
+                            <a class="btn btn-link" href="">GYM & Yoga</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="copyright">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        &copy; <a class="border-bottom" href="#">Your Site Name</a>, All Right Reserved.
+
+                        <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+                        Designed By <a class="border-bottom" href="https://htmlcodex.com">HTML Codex</a>
+                        <br>Distributed By: <a class="border-bottom" href="https://www.facebook.com/hugdo.02/"
+                            target="_blank">Hugciute</a>
+                    </div>
+                    <div class="col-md-6 text-center text-md-end">
+                        <div class="footer-menu">
+                            <a href="">Home</a>
+                            <a href="">Cookies</a>
+                            <a href="">Help</a>
+                            <a href="">FQAs</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script> -->
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+</body>
+{%endblock%}

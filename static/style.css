@@ -1,0 +1,17 @@
+* {
+    box-sizing: border-box;
+}
+
+.color-green {
+    color: green;
+}
+
+.width-select {
+    width: 250px;
+}
+
+
+/* .fakeimage {
+    max-width: 100%;
+    height: auto;
+} */
