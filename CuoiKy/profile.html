@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+    <title>Profile</title>
+
+    <!-- Libraries Stylesheet -->
+<<<<<<< HEAD
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Style -->
+    <link href="css/style.css" rel="stylesheet">
+=======
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet"> -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"/> -->
+
+    <!-- Style -->
+    <!-- <link href="css/profile.css" rel="stylesheet"> -->
+>>>>>>> 5b0cba1 (Update Project to templates_origin)
+</head>
+
+<body class=" bg-secondary">
+
+    <!-- Header Start -->
+    <div class="container-fluid bg-dark">
+        <div class="row">
+            <div class="col-lg-3 bg-dark">
+                <a href="home.html" class="navbar-brand">
+                    <h1 class="text-primary text-uppercase">Hotelier</h1>
+                </a>
+            </div>
+            <div class="col-lg-9">
+                <div class="row bg-success align-items-center">
+                    <div class="col-sm-9 d-flex">
+                        <div class="">
+                            <i class="fa fa-envelope">hugdosiucute@u_oa.com</i>
+                        </div>
+                        <div class="mx-5">
+                            <i class="fa fa-phone-alt">+89 365 046 708</i>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 px-3 text-end">
+                        <div class="d-inline-flex align-items-center py-2">
+                            <a class="me-3" href="#"><i class="fab fa-facebook-f text-light"></i></a>
+                            <a class="me-3" href="#"><i class="fab fa-twitter text-light"></i></a>
+                            <a class="me-3" href="#"><i class="fab fa-linkedin-in text-light"></i></a>
+                            <a class="me-3" href="#"><i class="fab fa-instagram text-light"></i></a>
+                            <a class="me-3" href="#"><i class="fab fa-youtube text-light"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row row-cols-2 mt-3 align-items-center">
+                    <!-- Search -->
+                    <div class="col">
+                        <form class="d-flex form-floating">
+                            <input class="form-control me-2" type="search" placeholder="abcd" id="floatingTextarea"
+                                required>
+                            <label for="floatingTextarea">Search</label>
+                            <button class="btn btn-outline-success" type="submit">Search</button>
+                        </form>
+                    </div>
+                    <!-- end Search -->
+
+                    <!-- item right -->
+                    <div class="col d-flex justify-content-end">
+                        <!-- Cart -->
+                        <a class="text-primary me-3" href="#">
+                            <i class="fas fa-shopping-cart"></i>
+                        </a>
+
+                        <!-- Notifications -->
+                        <div class="dropdown">
+                            <a href="#" class="position-relative text-primary me-3 text-decoration-none"
+                                data-bs-toggle="dropdown">
+                                <i class="fas fa-bell"></i>
+                                <span
+                                    class="position-absolute top-0 start-10 translate-middle badge rounded-pill badge-notification bg-danger">3</span>
+                            </a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Some news</a>
+                                <a class="dropdown-item" href="#">Another news</a>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                        </div>
+
+                        <div class="dropdown">
+                            <a href="#" class="dropdown-toggle text-decoration-none" data-bs-toggle="dropdown">
+                                <img src="img/testimonial-1.jpg" class="rounded-circle" height="25" />
+                            </a>
+                            <div class="dropdown-menu">
+                                <a href="#" class="dropdown-item">My Profile</a>
+                                <a href="#" class="dropdown-item">Settings</a>
+                                <a href="#" class="dropdown-item">Logout</a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col">
+                        <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+                            <button type="button" class="navbar-toggler" data-bs-toggle="collapse"
+                                data-bs-target="#navbarCollapse">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarCollapse">
+                                <div class="navbar-nav">
+                                    <a href="home.html" class="nav-item nav-link active">Home</a>
+                                    <a href="about.html" class="nav-item nav-link">About</a>
+                                    <a href="service.html" class="nav-item nav-link">Services</a>
+                                    <a href="rooms.html" class="nav-item nav-link">Rooms</a>
+                                    <div class="nav-item dropdown">
+                                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                                        <div class="dropdown-menu">
+                                            <a href="booking.html" class="dropdown-item">Booking</a>
+                                            <a href="team.html" class="dropdown-item">Our Team</a>
+                                            <a href="testimonial.html" class="dropdown-item">Testimonial</a>
+                                            <hr class="dropdown-divider">
+                                            <a href="#" class="dropdown-item">Other</a>
+                                        </div>
+                                    </div>
+                                    <a href="contact.html" class="nav-item nav-link">Contact</a>
+
+                                </div>
+
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Header End -->
+
+    <!-- profile -->
+<<<<<<< HEAD
+    <div class="container m-5">
+        <div class="row m-3 p-0">
+            <div class="col-md-4">
+                <div class="card m-1">
+                    <div class="p-3">
+                        <img src="img/testimonial-1.jpg" class="rounded-circle m-2" />
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-8">
+                <div class="card m-1">
+                    <div class="row row-cols-2 p-3">
+                        <div class="col p-3 ">
+                            <span>Fist name:</span>
+                            <span></span>
+                        </div>
+                        <div class="col p-3">
+                            <span>Last name:</span>
+                            <span></span>
+                        </div>
+                        <div class="col p-3">
+                            <span>Phone:</span>
+                            <span></span>
+                        </div>
+                        <div class="col p-3">
+                            <span>Email:</span>
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <div class="row m-3 p-0">
+            <div class="col-md-4">
+                <div class="card m-1 text-primary">
+                    <div class="p-3 text-primary">
+                        <span >social network</span>
+                        <div class="bg-dark">
+                            <a class="me-3" href="#"><i class="fab fa-facebook-f text-light"></i></a>
+                            <a class="me-3" href="#"><i class="fab fa-twitter text-light"></i></a>
+                            <a class="me-3" href="#"><i class="fab fa-linkedin-in text-light"></i></a>
+                            <a class="me-3" href="#"><i class="fab fa-instagram text-light"></i></a>
+                            <a class="me-3" href="#"><i class="fab fa-youtube text-light"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div class="card m-1">
+                    <div class="p-3 text-primary">
+                        <span>Statistics</span>
+=======
+    <div class="container">
+        <div class="m-3">
+
+            <!-- Breadcrumb -->
+            <!-- <nav aria-label="breadcrumb" class="main-breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item"><a href="javascript:void(0)">User</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">User Profile</li>
+                </ol>
+            </nav> -->
+            <!-- End Breadcrumb -->
+
+            <div class="row">
+                <div class="col-md-4 my-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="d-flex flex-column align-items-center text-center">
+                                <img src="https://scontent.fhan2-4.fna.fbcdn.net/v/t39.30808-1/316413086_2026887091034059_6346724671807327018_n.jpg?stp=dst-jpg_p240x240&_nc_cat=110&ccb=1-7&_nc_sid=7206a8&_nc_ohc=CDVzTYPPHBoAX9Y9esM&tn=_OxbBXoEgaEpyrzi&_nc_ht=scontent.fhan2-4.fna&oh=00_AfCnpIJ2DP4oK6y_1iXILv-1q6DeCOZ6mx1Uua56u3uouw&oe=6393F12D"
+                                    alt="User" class="rounded-circle" width="150">
+                                <div class="mt-3">
+                                    <h4>Hugdo Siucute</h4>
+                                    <p class="text-secondary mb-1">Học viện chính Trị</p>
+                                    <p class="text-secondary">Xã Hội Nhân Văn, Cầu Giấy</p>
+                                    <p class="text-secondary">Ghi Cái Gì Thì Ghi</p>
+                                    <button class="btn btn-primary">Ú</button>
+                                    <button class="btn btn-outline-primary">Òa</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mt-3">
+                        <ul class="list-group">
+                            <li class="list-group-item d-flex justify-content-between align-items-center flex-wrap">
+                                <h6 class="mb-0"> <i class="bi bi-browser-chrome"></i> Website</h6>
+                                <span class="text-secondary">https://bootdey.com</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center flex-wrap">
+
+                                <h6 class="mb-0"><i class="bi bi-github"></i>Github</h6>
+                                <span class="text-secondary">bootdey</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center flex-wrap">
+                                <h6 class="mb-0"><i class="bi bi-twitter"></i>Twitter</h6>
+                                <span class="text-secondary">@bootdey</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center flex-wrap">
+                                <h6 class="mb-0"><i class="bi bi-instagram"></i>Instagram</h6>
+                                <span class="text-secondary">bootdey</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center flex-wrap">
+                                <h6 class="mb-0"><i class="bi bi-facebook"></i>Facebook</h6>
+                                <span class="text-secondary">bootdey</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-8 my-3">
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <h6 class="mb-0">Full Name</h6>
+                                </div>
+                                <div class="col-sm-9 text-secondary">
+                                    Hug Do Manh
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <h6 class="mb-0">Email</h6>
+                                </div>
+                                <div class="col-sm-9 text-secondary">
+                                    Hugdosuicute@numberone.com
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <h6 class="mb-0">Phone</h6>
+                                </div>
+                                <div class="col-sm-9 text-secondary">
+                                    911
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <h6 class="mb-0">Mobile</h6>
+                                </div>
+                                <div class="col-sm-9 text-secondary">
+                                    0999999999
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <h6 class="mb-0">Address</h6>
+                                </div>
+                                <div class="col-sm-9 text-secondary">
+                                    CA LI PHÓC LI A
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <a class="btn btn-info " target="__blank" href="profile-edit.html">Edit</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm-6 mb-3">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h6 class="d-flex align-items-center mb-3">Project Status</h6>
+                                    <small>Web Design</small>
+                                    <div class="progress mb-3" style="height: 5px">
+                                        <div class="progress-bar bg-primary" role="progressbar" style="width: 80%"
+                                            aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <small>Website Markup</small>
+                                    <div class="progress mb-3" style="height: 5px">
+                                        <div class="progress-bar bg-primary" role="progressbar" style="width: 72%"
+                                            aria-valuenow="72" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <small>One Page</small>
+                                    <div class="progress mb-3" style="height: 5px">
+                                        <div class="progress-bar bg-primary" role="progressbar" style="width: 89%"
+                                            aria-valuenow="89" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <small>Mobile Template</small>
+                                    <div class="progress mb-3" style="height: 5px">
+                                        <div class="progress-bar bg-primary" role="progressbar" style="width: 55%"
+                                            aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <small>Backend API</small>
+                                    <div class="progress mb-3" style="height: 5px">
+                                        <div class="progress-bar bg-primary" role="progressbar" style="width: 66%"
+                                            aria-valuenow="66" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 mb-3">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <h6 class="d-flex align-items-center mb-3">Project Status</h6>
+                                    <small>Web Design</small>
+                                    <div class="progress mb-3" style="height: 5px">
+                                        <div class="progress-bar bg-primary" role="progressbar" style="width: 80%"
+                                            aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <small>Website Markup</small>
+                                    <div class="progress mb-3" style="height: 5px">
+                                        <div class="progress-bar bg-primary" role="progressbar" style="width: 72%"
+                                            aria-valuenow="72" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <small>One Page</small>
+                                    <div class="progress mb-3" style="height: 5px">
+                                        <div class="progress-bar bg-primary" role="progressbar" style="width: 89%"
+                                            aria-valuenow="89" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <small>Mobile Template</small>
+                                    <div class="progress mb-3" style="height: 5px">
+                                        <div class="progress-bar bg-primary" role="progressbar" style="width: 55%"
+                                            aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <small>Backend API</small>
+                                    <div class="progress mb-3" style="height: 5px">
+                                        <div class="progress-bar bg-primary" role="progressbar" style="width: 66%"
+                                            aria-valuenow="66" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+>>>>>>> 5b0cba1 (Update Project to templates_origin)
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- profile end -->
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-light footer pt-5">
+        <div class="container pb-5">
+            <div class="row g-5">
+                <div class="col-md-6 col-lg-4">
+                    <div class="bg-primary rounded p-4">
+                        <a href="index.html">
+                            <h1 class="text-white text-uppercase mb-3">Hotelier</h1>
+                        </a>
+                        <p class="text-white mb-0">
+                            Download <a class="text-dark fw-medium" href="#">Hotelier – Premium Version</a>,
+                            build a professional website for your hotel business and grab the attention of new visitors
+                            upon your site’s launch.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <h6 class="section-title text-start text-primary text-uppercase mb-4">Contact</h6>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>334 Nguyen Trai, Thanh Xuan, HN</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+98 365 046 708</p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>hugdosiucute@u_oa.com</p>
+                    <div class="d-flex pt-2">
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-5 col-md-12">
+                    <div class="row gy-5 g-4">
+                        <div class="col-md-6">
+                            <h6 class="section-title text-start text-primary text-uppercase mb-4">Company</h6>
+                            <a class="btn btn-link" href="">About Us</a>
+                            <a class="btn btn-link" href="">Contact Us</a>
+                            <a class="btn btn-link" href="">Privacy Policy</a>
+                            <a class="btn btn-link" href="">Terms & Condition</a>
+                            <a class="btn btn-link" href="">Support</a>
+                        </div>
+                        <div class="col-md-6">
+                            <h6 class="section-title text-start text-primary text-uppercase mb-4">Services</h6>
+                            <a class="btn btn-link" href="">Food & Restaurant</a>
+                            <a class="btn btn-link" href="">Spa & Fitness</a>
+                            <a class="btn btn-link" href="">Sports & Gaming</a>
+                            <a class="btn btn-link" href="">Event & Party</a>
+                            <a class="btn btn-link" href="">GYM & Yoga</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="copyright">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        &copy; <a class="border-bottom" href="#">Your Site Name</a>, All Right Reserved.
+
+                        <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+                        Designed By <a class="border-bottom" href="https://htmlcodex.com">HTML Codex</a>
+                        <br>Distributed By: <a class="border-bottom" href="https://www.facebook.com/hugdo.02/"
+                            target="_blank">Hugciute</a>
+                    </div>
+                    <div class="col-md-6 text-center text-md-end">
+                        <div class="footer-menu">
+                            <a href="">Home</a>
+                            <a href="">Cookies</a>
+                            <a href="">Help</a>
+                            <a href="">FQAs</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script> -->
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
