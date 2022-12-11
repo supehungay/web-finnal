@@ -76,9 +76,7 @@ def register():
         username = request.form['username']
         password = request.form['password']
         repassword = request.form['repassword']
-        birthday = request.form['birthday']
-        phone = request.form['phone_number']
-        fullname = request.form['fullname']
+
         email = request.form['email']
         cursor = mysql.connection.cursor(MySQLdb.cursors.DictCursor)
 
@@ -96,10 +94,10 @@ def register():
             msg = 'Invalid password, please try again'
         else:
             password_hash = generate_password_hash(password)
-            cursor.execute('INSERT INTO taikhoan VALUES (NULL,%s,%s, %s, %s,%s, %s, 2, 0)', (fullname, phone, email, birthday, username, password_hash, ))
+            cursor.execute('INSERT INTO taikhoan VALUES (NULL, %s, %s, %s, 2, 0)', ( email, username, password_hash, ))
             mysql.connection.commit()
             msg = 'You have successfully registered !'
-            return render_template('register', msg=msg)
+            return render_template('home.html', msg=msg)
     elif request.method == 'POST':
         msg = 'Please fill out the form !'
     return render_template('register.html', msg=msg)
@@ -162,8 +160,8 @@ def edit_profile():
 
         if data:
             cursor = mysql.connection.cursor(MySQLdb.cursors.DictCursor)
-            cursor.execute('UPDATE khachhang SET customer_name = %s, customer_identity= %s, customer_gender=%s, customer_phone = %s, customer_address=%s,  customer_note = %s where account_id = %s', (fullname, identity, gender, phone_number ,address, account_id,birthday, note, account_id))
-            cursor.execute('UPDATE taikhoan  SET user_name = %s where account_id = %s', (username, account_id))
+            cursor.execute('UPDATE khachhang SET `customer_name` = %s, `customer_identity`= %s, `customer_gender`=%s, `customer_phone` = %s, `customer_address`=%s,  `customer_note` = %s where `account_id` = %s', (fullname, identity, gender, phone_number ,address, account_id,birthday, note, account_id,))
+            cursor.execute('UPDATE taikhoan  SET `user_name` = %s where `account_id` = %s', (username, account_id))
         else:
             cursor = mysql.connection.cursor(MySQLdb.cursors.DictCursor)
             cursor.execute('INSERT INTO khachhang values(NULL, %s, %s, %s, %s,%s, %s, %s, %s, 0)', (fullname, account_id, identity, gender, phone_number,address, birthday, note,))
